@@ -1,0 +1,28 @@
+.dev {
+    display    : grid;
+    place-items: center;
+    min-height : 100vh;
+}
+
+.Ani {
+    font-family : monospace;
+    border-right: 4px solid;
+    font-size   : 20px;
+    width       : 265px;
+    white-space : nowrap;
+    overflow    : hidden;
+    animation   : typing 1s steps(29), blinking 0.5s infinite step-end alternate;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
